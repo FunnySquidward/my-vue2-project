@@ -26,14 +26,26 @@
     <!-- 4. 九宫格导航 -->
     <div class="nav">
     <van-row gutter="20">
-        <van-col span="8">span: 8</van-col>
-        <van-col span="8">span: 8</van-col>
-        <van-col span="8">span: 8</van-col>
+        <van-col span="8">
+            <img src="../assets/menu3.png" alt="">
+        </van-col>
+        <van-col span="8">
+             <img src="../assets/menu4.png" alt="">
+             </van-col>
+        <van-col span="8"> 
+            <img src="../assets/menu5.png" alt="">
+            </van-col>
     </van-row>
       <van-row gutter="20">
-        <van-col span="8">span: 8</van-col>
-        <van-col span="8">span: 8</van-col>
-        <van-col span="8">span: 8</van-col>
+        <van-col span="8">
+             <img src="../assets/menu6.png" alt="">
+             </van-col>
+        <van-col span="8"> 
+            <img src="../assets/menu9.png" alt="">
+            </van-col>
+        <van-col span="8"> 
+            <img src="../assets/menu10.png" alt="">
+            </van-col>
     </van-row>
 </div>
   </div>
