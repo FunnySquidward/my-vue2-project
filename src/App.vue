@@ -48,7 +48,7 @@ export default {
 .van-nav-bar {
   background-color:#0094ff !important;
 }
-.van-nav-bar__title{
+.van-nav-bar__title,.van-nav-bar__text,.van-icon-arrow-left{
   color:#ffffff !important;
 }
 
