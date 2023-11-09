@@ -30,6 +30,8 @@ import Image from './Image/Index.vue'
 import ShopCar from './ShopCar/Index.vue'
 
 const routes = [
+  // {path:'/',component:Home},   // 给/根路径注册一个页面对应，来解决刚开始进入网站白屏问题
+  {path:'/',redirect:'/Home' },  // 解决白屏问题方案2：使用redirect:'/Home'
   {path:'/Home',component:Home},
   {path:'/News',component:News},
   {path:'/Image',component:Image},
