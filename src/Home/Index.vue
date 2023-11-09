@@ -52,11 +52,6 @@
 </template>
 
 <script>
-
-// 1.0 npm i axios
-// 2.0 导入axios
-import axios from 'axios'
-
 export default {
     data(){
         return {
@@ -71,7 +66,7 @@ export default {
         // 请求轮播图
         getlunbo(){
             // 3.0 请求服务器获取到轮播图数据: http://106.52.170.128:8888/api/getlunbo
-            axios.get('http://106.52.170.128:8888/api/getlunbo')
+            this.$axios.get('/api/getlunbo')
             .then(res=>{
                 // console.log(res);
                 this.imglist = res.data.message
@@ -79,7 +74,7 @@ export default {
         },
         // 请求广播的新闻数据
         getNewsList(){
-            axios.get('http://106.52.170.128:8888/api/getnewslist')
+            this.$axios.get('/api/getnewslist')
             .then(res=>{   
                 let list = res.data.message              
                 

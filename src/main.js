@@ -1,6 +1,16 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+
+// 统一将axios对象导入后加载到Vue对象实例原型上同时设置axios的baseUrl前缀
+import axios from 'axios'
+// 同时设置axios的baseUrl前缀
+// http://106.52.170.128:8888
+axios.defaults.baseURL = 'http://106.52.170.128:8888'  // 线上数据服务器
+// axios.defaults.baseURL = 'http://127.0.0.1:8888'  // 本地数据服务器
+Vue.prototype.$axios = axios
+
+
 // 1. 导入vant的所有组件
 import Vant from 'vant'
 // 2. 导入vant组件所有的样式css
