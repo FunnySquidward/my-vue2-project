@@ -111,7 +111,7 @@ export default {
 <style scoped>
 .van-swipe {
     height: 200px;
-    background-color: red;
+    background-color: white;
 }
 
 img{

@@ -6,8 +6,9 @@ import App from './App.vue'
 import axios from 'axios'
 // 同时设置axios的baseUrl前缀
 // http://106.52.170.128:8888
-axios.defaults.baseURL = 'http://106.52.170.128:8888'  // 线上数据服务器
+   axios.defaults.baseURL = 'http://106.52.170.128:8888'  // 线上数据服务器
 // axios.defaults.baseURL = 'http://127.0.0.1:8888'  // 本地数据服务器
+// axios.defaults.baseURL = "http://10.117.176.97:8888"  // 局域网数据服务器
 Vue.prototype.$axios = axios
 
 
